@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Тест по информатике</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(120deg, #f0f9ff, #cbebff);
+            color: #333;
+            margin: 0;
+            padding: 20px;
+        }
+
+        h1 {
+            text-align: center;
+            color: #3e10a0;
+            font-size: 2.5em;
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        .task {
+            width: 100%;
+            text-align: left;
+            font-size: 1.2em;
+            font-weight: bold;
+            color: #000000;
+            padding: 10px;
+            background-color: #e6f7ff;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .variant {
+            width: 25%;
+            text-align: center;
+            font-size: 1.1em;
+            font-weight: 500;
+            padding: 10px;
+            background-color: #e1f5fe;
+        }
+
+        .answer {
+            width: 90%;
+            padding: 15px;
+            font-size: 16px;
+            margin: 10px auto;
+            display: block;
+            border-radius: 8px;
+            border: 2px solid #007acc;
+            box-shadow: inset 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        table {
+            width: 100%;
+            margin-bottom: 20px;
+            border-collapse: separate;
+            border-spacing: 10px;
+            background-color: #fff;
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+            border-radius: 12px;
+            overflow: hidden;
+        }
+
+        table td, table th {
+            padding: 20px;
+            font-size: 1.1em;
+            text-align: center;
+        }
+
+        button {
+            display: block;
+            width: 250px;
+            padding: 15px;
+            font-size: 18px;
+            margin: 30px auto;
+            color: #fff;
+            background: linear-gradient(45deg, #007acc, #005f99);
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            transition: all 0.3s ease;
+        }
+
+        button:hover {
+            background: linear-gradient(45deg, #005f99, #003d66);
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        .result {
+            margin-top: 30px;
+            font-size: 22px;
+            text-align: center;
+            color: #fff;
+            background-color: #4CAF50;
+            padding: 15px;
+            border-radius: 10px;
+            width: 60%;
+            margin: 20px auto;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+        }
+
+        .correct {
+            background-color: #d4edda;
+            border: 2px solid green;
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0, 255, 0, 0.1);
+        }
+
+        .incorrect {
+            background-color: #f8d7da;
+            border: 2px solid red;
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(255, 0, 0, 0.1);
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>Тест по информатике Андрей Александрович</h1>
+
+    <!-- Вопрос 1 -->
+    <table border="1" id="q1">
+        <tr>
+            <td rowspan="3">1</td>
+            <td colspan="4" class="task">
+                Сколько единиц в двоичной записи десятичного числа 194,5?
+            </td>
+        </tr>
+        <tr>
+            <td class="variant">1) 5</td>
+            <td class="variant">2) 2</td>
+            <td class="variant">3) 3</td>
+            <td class="variant">4) 4</td>
+        </tr>
+        <tr>
+            <td colspan="5">
+                <input id="a1" type="text" class="answer" placeholder="Введите номер ответа (1-4)" />
+            </td>
+        </tr>
+    </table>
+
+    <!-- Вопрос 2 -->
+    <table border="1" id="q2">
+        <tr>
+            <td rowspan="3">2</td>
+            <td colspan="4" class="task">
+                Какое из чисел отвечает условию: A = A7<sub>16</sub>, B = 251<sub>8</sub>, A &lt; C &lt; B?
+            </td>
+        </tr>
+        <tr>
+            <td class="variant">1) 10101100</td>
+            <td class="variant">2) 10101010</td>
+            <td class="variant">3) 10101011</td>
+            <td class="variant">4) 10101000</td>
+        </tr>
+        <tr>
+            <td colspan="5">
+                <input id="a2" type="text" class="answer" placeholder="Введите номер ответа (1-4)" />
+            </td>
+        </tr>
+    </table>
+
+    <!-- Вопрос 3 -->
+    <table border="1" id="q3">
+        <tr>
+            <td rowspan="3">3</td>
+            <td colspan="4" class="task">
+                Какое из приведённых имён удовлетворяет логическому условию: ¬(последняя буква гласная → первая буква согласная) ∧ вторая буква согласная?
+            </td>
+        </tr>
+        <tr>
+            <td class="variant">1) ИРИНА</td>
+            <td class="variant">2) АРТЁМ</td>
+            <td class="variant">3) СТЕПАН</td>
+            <td class="variant">4) МАРИЯ</td>
+        </tr>
+        <tr>
+            <td colspan="5">
+                <input id="a3" type="text" class="answer" placeholder="Введите номер ответа (1-4)" />
+            </td>
+        </tr>
+    </table>
+
+    <!-- Вопрос 4 -->
+    <table border="1" id="q4">
+        <tr>
+            <td rowspan="3">4</td>
+            <td colspan="4" class="task">
+                Для какого из указанных значений X истинно высказывание ¬((X > 2) → (X > 3))?
+            </td>
+        </tr>
+        <tr>
+            <td class="variant">1) 1</td>
+            <td class="variant">2) 2</td>
+            <td class="variant">3) 3</td>
+            <td class="variant">4) 4</td>
+        </tr>
+        <tr>
+            <td colspan="5">
+                <input id="a4" type="text" class="answer" placeholder="Введите номер ответа (1-4)" />
+            </td>
+        </tr>
+    </table>
+
+    <!-- Вопрос 5 -->
+    <table border="1" id="q5">
+        <tr>
+            <td rowspan="3">5</td>
+            <td colspan="4" class="task">
+                Для 5 букв русского алфавита заданы их двоичные коды. Какое из четырёх сообщений прошло без ошибки?
+            </td>
+        </tr>
+        <tr>
+            <td class="variant">1) 110100001001100111</td>
+            <td class="variant">2) 111010000100110011</td>
+            <td class="variant">3) 110100001001100111</td>
+            <td class="variant">4) 11010000100110010</td>
+        </tr>
+        <tr>
+            <td colspan="5">
+                <input id="a5" type="text" class="answer" placeholder="Введите номер ответа (1-4)" />
+            </td>
+        </tr>
+    </table>
+
+    <!-- Вопрос 6 -->
+    <table border="1" id="q6">
+        <tr>
+            <td rowspan="3">6</td>
+            <td colspan="4" class="task">
+                Автоматическое устройство перевело сообщение с 16-битного Unicode в 8-битный КОИ-8. Сообщение уменьшилось на 480 бит. Какова длина сообщения в символах?
+            </td>
+        </tr>
+        <tr>
+            <td class="variant">1) 30</td>
+            <td class="variant">2) 60</td>
+            <td class="variant">3) 120</td>
+            <td class="variant">4) 480</td>
+        </tr>
+        <tr>
+            <td colspan="5">
+                <input id="a6" type="text" class="answer" placeholder="Введите номер ответа (1-4)" />
+            </td>
+        </tr>
+    </table>
+
+    <!-- Вопрос 7 -->
+    <table border="1" id="q7">
+        <tr>
+            <td rowspan="3">7</td>
+            <td colspan="4" class="task">
+                В коробке лежат 64 цветных карандаша, из них синие. Сообщение о том, что достали синий карандаш, несёт 4 бита информации. Сколько синих карандашей в коробке?
+            </td>
+        </tr>
+        <tr>
+            <td colspan="4">
+                <input id="a7" type="text" class="answer" placeholder="Введите ваш ответ" />
+            </td>
+        </tr>
+    </table>
+
+    <!-- Вопрос 8 -->
+    <table border="1" id="q8">
+        <tr>
+            <td rowspan="3">8</td>
+            <td colspan="4" class="task">
+                Световое табло с лампочками. Каждая лампочка имеет 3 состояния. Сколько лампочек нужно, чтобы передать 20 сигналов?
+            </td>
+        </tr>
+        <tr>
+            <td class="variant">1) 6</td>
+            <td class="variant">2) 5</td>
+            <td class="variant">3) 3</td>
+            <td class="variant">4) 4</td>
+        </tr>
+        <tr>
+            <td colspan="5">
+                <input id="a8" type="text" class="answer" placeholder="Введите номер ответа (1-4)" />
+            </td>
+        </tr>
+    </table>
+
+    <!-- Вопрос 9 -->
+    <table border="1" id="q9">
+        <tr>
+            <td rowspan="3">9</td>
+            <td colspan="4" class="task">
+                Для регистрации на сайте требуется пароль из 11 символов (цифры и буквы). Каков объём памяти для 60 паролей?
+            </td>
+        </tr>
+        <tr>
+            <td class="variant">1) 540 байт</td>
+            <td class="variant">2) 600 байт</td>
+            <td class="variant">3) 660 байт</td>
+            <td class="variant">4) 720 байт</td>
+        </tr>
+        <tr>
+            <td colspan="5">
+                <input id="a9" type="text" class="answer" placeholder="Введите номер ответа (1-4)" />
+            </td>
+        </tr>
+    </table>
+
+    <!-- Вопрос 10 -->
+    <table border="1" id="q10">
+        <tr>
+            <td rowspan="3">10</td>
+            <td colspan="4" class="task">
+                Автоматическое устройство перекодировало информационное сообщение на русском языке с 16-битного Unicode в 8-битную кодировку КОИ-8. Сообщение уменьшилось на 480 бит. Какова длина сообщения в символах?
+            </td>
+        </tr>
+        <tr>
+            <td class="variant">1) 30</td>
+            <td class="variant">2) 60</td>
+            <td class="variant">3) 120</td>
+            <td class="variant">4) 480</td>
+        </tr>
+        <tr>
+            <td colspan="5">
+                <input id="a10" type="text" class="answer" placeholder="Введите номер ответа (1-4)" />
+            </td>
+        </tr>
+    </table>
+
+    <!-- Вопрос 11 -->
+    <table border="1" id="q11">
+        <tr>
+            <td rowspan="3">11</td>
+            <td colspan="4" class="task">
+                В коробке 64 цветных карандаша, из них синие. Сообщение о том, что достали синий карандаш, несёт 4 бита информации. Сколько синих карандашей было в коробке?
+            </td>
+        </tr>
+        <tr>
+            <td colspan="4">
+                <input id="a11" type="text" class="answer" placeholder="Введите ваш ответ" />
+            </td>
+        </tr>
+    </table>
+
+    <!-- Вопрос 12 -->
+    <table border="1" id="q12">
+        <tr>
+            <td rowspan="3">12</td>
+            <td colspan="4" class="task">
+                Световое табло состоит из лампочек. Каждая лампочка может находиться в одном из трёх состояний («включено», «выключено» или «мигает»). Сколько лампочек нужно, чтобы передать 20 различных сигналов?
+            </td>
+        </tr>
+        <tr>
+            <td class="variant">1) 6</td>
+            <td class="variant">2) 5</td>
+            <td class="variant">3) 3</td>
+            <td class="variant">4) 4</td>
+        </tr>
+        <tr>
+            <td colspan="5">
+                <input id="a12" type="text" class="answer" placeholder="Введите номер ответа (1-4)" />
+            </td>
+        </tr>
+    </table>
+
+    <!-- Вопрос 13 -->
+    <table border="1" id="q13">
+        <tr>
+            <td rowspan="3">13</td>
+            <td colspan="4" class="task">
+                Для регистрации на сайте требуется придумать пароль. Длина пароля — 11 символов. Символы — десятичные цифры и 12 букв алфавита (включая заглавные и строчные). Определите объём памяти для хранения 60 паролей.
+            </td>
+        </tr>
+        <tr>
+            <td class="variant">1) 540 байт</td>
+            <td class="variant">2) 600 байт</td>
+            <td class="variant">3) 660 байт</td>
+            <td class="variant">4) 720 байт</td>
+        </tr>
+        <tr>
+            <td colspan="5">
+                <input id="a13" type="text" class="answer" placeholder="Введите номер ответа (1-4)" />
+            </td>
+        </tr>
+    </table>
+
+    <button onclick="checkAnswers()">Проверить ответы</button>
+
+    <div id="result" class="result"></div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
